@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}body{
+    
+    background:linear-gradient(45deg, #234a51, #481f1e);
+}
+.container{
+    width: 100%;
+    height: 250px;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, #323f2ce2, #132809ce);
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 50px;
+    width: 150px;
+}
+.navbar ul li{
+    color: #fff;
+    display: inline-block;
+    margin: 12px 10px;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.searchbtn{
+    width: 50%;
+    height: 35px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 200px;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #000000;
+    padding: 10px 25px;
+    height: 45px;
+    border-radius: 30px;
+    flex: 1 ;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.search button img{
+    width: 16px;
+}
+
+.popup{
+    width: 400px;
+    background: #ebebeb;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px ;
+    background: #323f2ce2;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup input{
+    width: 80%;
+    height: 35px;
+    margin: 10px auto;
+    padding: 2px 10px;
+    font-size: 18px;
+    background: #cfffcf;
+    color: #000000;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+.popup p{
+    margin: 10px auto;
+}
+.popup img{
+    height: 12px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.food{
+    width: 90%;
+    height: 40vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.food h3{
+    font-weight: normal;
+    font-size: 26px;
+}
+.food .card{
+    width: 40%;
+    height: 90%; 
+    margin: 5px 10px;
+    float: right;
+    border: 2px solid black;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+}
+.food .card img{
+    width: 60%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card h4{
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+}
+.card span{
+    color: rgb(44, 44, 44);
+    margin:auto 5px;
+    padding: 10px 5px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.container h1{
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+    font-size: 38px;
+    color: #ffffff;
+    margin: 20px;
+    text-align: center;
+}
+.order{
+    background-color:#f8e5a0 ;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.order select{
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    width: 70%;
+    height: 40px;
+    float:left;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: #000000;
+}
+.order button{
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    background-color: #ed731c;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+

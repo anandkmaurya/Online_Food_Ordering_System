@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    
+    background:linear-gradient(45deg, #234a51, #481f1e);
+}
+.container{
+    width: 100%;
+    height: 250px;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, #323f2ce2, #132809ce);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    height: 50px;
+    width: 150px;
+}
+.logo h1{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
